@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-3"></div>
+            <div class="col-6 p-3 border rounded shadow">
+                <h3>Sign In</h3>
+                <form action="" method="post">
+                    {%csrf_token%}
+                    {{form}}
+                    <button type="submit">Login</button>
+                    Not a User? <a href="{%url 'signup'%}">Register</a>
+                </form>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+</body>
+</html>
